@@ -1,14 +1,15 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import FPage from "./FPage/FPage";
-import SPage from "./SPage/SPage";
 import ThPage from "./ThPage/ThPage";
 import FourPage from "./FourPage/FourPage";
+import SPage from "./SPage/SPage";
 
 const Main = () => {
     return (
         <main className={'main'}>
             <FPage></FPage>
             <SPage></SPage>
+
             <ThPage></ThPage>
             <FourPage></FourPage>
         </main>

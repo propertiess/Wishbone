@@ -1,12 +1,12 @@
 import React from 'react';
 import './SPage.css'
 import { motion } from "framer-motion"
-
+import Partner from './partnerimg.svg'
 const SPage = () => {
     const variantsTitle = {
         hidden: {
             opacity: 0,
-            x:-300,
+            x:-100,
         },
         visible: custom => ({
             opacity: 1,
@@ -78,7 +78,9 @@ const SPage = () => {
                                 initial={'hidden'}
                                 whileInView={'visible'}
                                 variants={variantsTitle}
-                                className="partner__img"></motion.div>
+                                className="partner__img">
+                                <img loading={'lazy'} width={'100%'} src={Partner} alt="Partner"/>
+                            </motion.div>
                         </div>
                         <motion.div
                             initial={'hidden'}

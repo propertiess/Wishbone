@@ -1,5 +1,6 @@
 import React from 'react';
 import './FPage.css'
+import BGFPage from './bgFPage.svg'
 import { motion } from "framer-motion"
 const FPage = () => {
     const variants = {
@@ -22,9 +23,10 @@ const FPage = () => {
             <div className="desc__container">
                 <div className="desc__content-left">
                     <div className="desc__logo">Wishbone+Partners</div>
-                    <motion.h1 initial="hidden" animate="visible"
+                    <motion.h1 initial="hidden" whileInView="visible"
                                variants={variants}
                                custom={0}
+                               viewport={{once:true,}}
                                className="desc__title">The home of beautiful architecture.</motion.h1>
                     <motion.p
                         initial="hidden" whileInView="visible"
@@ -39,7 +41,7 @@ const FPage = () => {
                         href="./" className={'desc__link link'}>Read more</motion.a>
                 </div>
                 <div className="desc__content-right">
-                    <div className="desc__img"></div>
+                    <img loading={'eager'} src={BGFPage} alt={'Дом'} className="desc__img"></img>
                 </div>
 
             </div>

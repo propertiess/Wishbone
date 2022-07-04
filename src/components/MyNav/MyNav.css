@@ -46,10 +46,14 @@ html {
 
 
 .nav {
+    background: white;
+
+
+}
+.nav__container-all {
     display: flex;
     align-items: center;
     min-height: 90px;
-    background: white;
     margin: 0 140px;
 }
 .nav__container {
@@ -77,7 +81,6 @@ html {
     border-radius: 14px;
 }
 .nav__logo {
-    background: url("./Logo.svg") no-repeat;
     min-width: 220px;
     min-height: 19px;
     margin-right: 359px;
@@ -88,5 +91,5 @@ html {
     display: flex;
     width: 100%;
     height: 100%;
-
+    top: 0;
 }

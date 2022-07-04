@@ -3,7 +3,7 @@
   max-width: 1440px;
   min-height: 100%;
   flex-direction: column;
-  background: white;
+  background: transparent;
   margin: 0 auto;
   overflow: hidden;
 }

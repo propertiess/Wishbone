@@ -1,7 +1,9 @@
 import React from 'react';
 import './FourPage.css'
 import {motion} from "framer-motion";
-
+import imgFourPage1 from './grid_img_1.svg'
+import imgFourPage2 from './grid_img_2.svg'
+import imgFourPage3 from './grid_img_3.svg'
 const FourPage = () => {
     const variantsTitles = {
         hidden: {
@@ -91,7 +93,9 @@ const FourPage = () => {
                             viewport={{once: true,amount: 0.1,}}
                             custom={1}
 
-                            className="grid__img_1"></motion.div>
+                            className="grid__img_1">
+                            <img loading={'lazy'} width={'100%'} src={imgFourPage1} alt="Sketching"/>
+                        </motion.div>
                         <motion.div
                         initial={'hidden'}
                         whileInView={'visible'}
@@ -114,7 +118,10 @@ const FourPage = () => {
                             variants={variantsImageCenter}
                             viewport={{once: true,amount: 0.1,}}
                             custom={1.1}
-                            className="grid__img_1 grid__img_2"></motion.div>
+                            className="grid__img_1 grid__img_2">
+                            <img loading={'lazy'} width={'100%'} src={imgFourPage2} alt="Finalizing"/>
+
+                        </motion.div>
                         <motion.div
                             initial={'hidden'}
                             whileInView={'visible'}
@@ -137,7 +144,9 @@ const FourPage = () => {
                             variants={variantsImageRight}
                             viewport={{once: true,amount: 0.1,}}
                             custom={1}
-                            className="grid__img_1 grid__img_3"></motion.div>
+                            className="grid__img_1 grid__img_3">
+                            <img width={'100%'} src={imgFourPage3} alt="Finalizing"/>
+                        </motion.div>
                         <motion.div
                             initial={'hidden'}
                             whileInView={'visible'}

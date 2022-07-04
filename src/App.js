@@ -1,13 +1,16 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import './App.css';
-import MyNav from "./components/MyNav/MyNav";
-import Main from "./components/Main/Main";
-
+import LoadingSpin from "react-loading-spin";
+const LazyNav = React.lazy(() => import ('./components/MyNav/MyNav'))
+const LazyMain = React.lazy(() => import ('./components/Main/Main'))
 function App() {
   return (
     <div className="App">
-        <MyNav></MyNav>
-        <Main></Main>
+        <Suspense fallback={<div style={{background: "transparent", textAlign: "center", minWidth: '100%', minHeight: '100%'}}><LoadingSpin/></div>}>
+            <LazyNav></LazyNav>
+            <LazyMain></LazyMain>
+        </Suspense>
+
     </div>
   );
 }
