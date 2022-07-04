@@ -1,6 +1,7 @@
 import React from 'react';
 import './FPage.css'
-import BGFPage from './bgFPage.svg'
+// import BGFPage from './bgFPage.svg'
+import BGFPage from './bgFPage low quality.jpg'
 import { motion } from "framer-motion"
 const FPage = () => {
     const variants = {
@@ -41,7 +42,10 @@ const FPage = () => {
                         href="./" className={'desc__link link'}>Read more</motion.a>
                 </div>
                 <div className="desc__content-right">
-                    <img loading={'eager'} src={BGFPage} alt={'Дом'} className="desc__img"></img>
+                    <a data-srcset={'https://i.imgur.com/9wui7Y6.png'} href="https://i.imgur.com/9wui7Y6.png" className={'full progressive replace'}>
+                        <img src={BGFPage} alt={'Дом'} loading="eager" className="preview"></img>
+                    </a>
+
                 </div>
 
             </div>

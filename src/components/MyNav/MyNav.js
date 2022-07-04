@@ -8,6 +8,9 @@ const MyNav = () => {
                 <div className="nav__logo">
                     <img loading={"eager"} src={Logo} alt="Logo"/>
                     <a href="./"></a></div>
+                <div className="nav__burger">
+                    <div className="burger__btn"></div>
+                </div>
                 <div className="nav__container container">
 
                     <a href="#projects" className="nav__link link">Projects</a>

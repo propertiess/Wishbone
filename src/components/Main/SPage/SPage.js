@@ -6,7 +6,7 @@ const SPage = () => {
     const variantsTitle = {
         hidden: {
             opacity: 0,
-            x:-100,
+            x: '-100%',
         },
         visible: custom => ({
             opacity: 1,
@@ -29,7 +29,7 @@ const SPage = () => {
     const variantsPartner = {
         hidden: {
             opacity: 0,
-            x: 300,
+            x: '100%',
         },
         visible: custom => ({
             opacity: 1,

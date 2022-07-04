@@ -6,5 +6,9 @@
   background: transparent;
   margin: 0 auto;
   overflow: hidden;
-}
 
+}
+.App.active {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.24);
+
+}
