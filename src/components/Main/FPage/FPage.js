@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 const FPage = () => {
     const variants = {
         hidden: {
-            y: 100,
+            y: "100%",
             opacity: 0,
         },
         visible: custom => (
