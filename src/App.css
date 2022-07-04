@@ -1,0 +1,10 @@
+.App {
+  display: flex;
+  max-width: 1440px;
+  min-height: 100%;
+  flex-direction: column;
+  background: white;
+  margin: 0 auto;
+  overflow: hidden;
+}
+

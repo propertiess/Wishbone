@@ -1,0 +1,54 @@
+.desc {
+    background: #ECE7E4;
+    min-height: 720px;
+
+}
+.desc__container {
+    min-height: 100%;
+    margin: 0 0 0 100px;
+    display: flex;
+
+}
+.desc__content-left {
+    align-self: center;
+}
+.desc__logo {
+    color: #645C55;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.42em;
+    margin-bottom: 20px;
+}
+.desc__title {
+    font-size: 64px;
+    line-height: 1.1em;
+}
+.desc__desc {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 1.5em;
+    padding-right: 111px;
+}
+.desc__link {
+    margin-top: 41px;
+    margin-left: 25px;
+    letter-spacing: .4px;
+    font-weight: 500;
+}
+.desc__content-left {
+    display: flex;
+    flex-direction: column;
+    min-height: 720px;
+    justify-content: center;
+}
+.desc__content-right {
+    min-width: 50%;
+}
+.desc__img {
+    background: url("./bgFPage.svg") no-repeat;
+    background-position: center center;
+    display: flex;
+    width: 100%;
+    min-height: 720px;
+
+}

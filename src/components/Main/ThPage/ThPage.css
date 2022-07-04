@@ -1,0 +1,26 @@
+.third-page__container {
+    background: url("./BgThPage.svg") no-repeat;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: #403E3B;
+}
+.third-page__title {
+    line-height: 1.42em;
+
+}
+.title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.third-page__row {
+    max-width: 285px;
+    max-height: 90px;
+    margin-right: 75px;
+}
+.third-page__desc {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
