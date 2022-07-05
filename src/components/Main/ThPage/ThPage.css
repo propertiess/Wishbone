@@ -15,9 +15,8 @@
     letter-spacing: 2px;
 }
 .third-page__row {
-    max-width: 285px;
-    max-height: 90px;
-    margin-right: 75px;
+    max-width: fit-content;
+    padding: 0 5vw;
 }
 .third-page__desc {
     font-size: 16px;

@@ -63,11 +63,11 @@ html {
     display: flex;
     align-items: center;
     min-height: 100%;
+    gap: 32px;
+
     justify-content: flex-start;
 }
-.nav__link:not(:last-child) {
-    margin-right: 32px;
-}
+
 .link {
     font-size: 15px;
     color: #1B1A1A;
