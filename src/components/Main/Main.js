@@ -1,18 +1,25 @@
-import React, {Suspense} from 'react';
+import React, {Suspense, useRef} from 'react';
 import FPage from "./FPage/FPage";
 import ThPage from "./ThPage/ThPage";
 import FourPage from "./FourPage/FourPage";
 import SPage from "./SPage/SPage";
+import './Main.css'
+import {CSSTransition} from "react-transition-group";
 
-const Main = () => {
+const Main = ({activeBurger, setActiveBurger}) => {
+    const nodeRef = useRef(null)
     return (
-        <main className={'main'}>
-            <FPage></FPage>
-            <SPage></SPage>
+        <CSSTransition nodeRef={nodeRef} in={activeBurger} timeout={500} classNames={'main'}>
+            <main  ref={nodeRef} onClick={() => setActiveBurger(false)}>
 
-            <ThPage></ThPage>
-            <FourPage></FourPage>
-        </main>
+                <FPage></FPage>
+                <SPage></SPage>
+
+                <ThPage></ThPage>
+                <FourPage></FourPage>
+            </main>
+        </CSSTransition>
+
     );
 };
 

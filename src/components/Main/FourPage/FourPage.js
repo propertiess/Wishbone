@@ -68,7 +68,7 @@ const FourPage = () => {
         }),
     }
     return (
-        <section className={'four-page'}>
+        <section className={'four-page'} >
             <div className="four-page__container">
                 <motion.div
                     initial={'hidden'}

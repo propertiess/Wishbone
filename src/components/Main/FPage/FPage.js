@@ -13,14 +13,14 @@ const FPage = () => {
             {
                 opacity: 1,
                 y: 0,
-                transition: {type: 'spring', bounce: 0.1, delay: custom * 1, duration: 1},
+                transition: {type: 'spring', bounce: 0.1, delay: custom * 0.2, duration: 1},
             }
         ),
 
     }
 
     return (
-        <section className={'desc'}>
+        <section className={'desc'} >
             <div className="desc__container">
                 <div className="desc__content-left">
                     <div className="desc__logo">Wishbone+Partners</div>
@@ -37,8 +37,7 @@ const FPage = () => {
                     <motion.a
                         initial="hidden" whileInView="visible"
                         variants={variants}
-                        custom={0.7}
-                        viewport={{amount: 0.3}}
+                        custom={0.5}
                         href="./" className={'desc__link link'}>Read more</motion.a>
                 </div>
                 <div className="desc__content-right">

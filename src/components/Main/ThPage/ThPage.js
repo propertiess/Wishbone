@@ -14,7 +14,7 @@ const ThPage = () => {
         }
     }
     return (
-        <section className={'third-page'}>
+        <section className={'third-page'} >
             <div className="third-page__container">
                 <motion.div
                     initial={'hidden'}

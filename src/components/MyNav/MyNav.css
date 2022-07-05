@@ -47,7 +47,9 @@ html {
 
 .nav {
     background: white;
-
+    position: sticky;
+    top: 0;
+    z-index: 99000;
 
 }
 .nav__container-all {
@@ -100,6 +102,24 @@ html {
     position: relative;
     margin-right: 15px;
 }
+.burger__menu {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    background: white;
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    visibility: hidden;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+
+}
+
+.burger__link {
+    margin-bottom: 10px;
+}
 .burger__btn:before {
     content: '';
     position: absolute;
@@ -107,13 +127,13 @@ html {
     width: 33px;
     background: #1B1A1A;
     top: -7px;
-
 }
 .burger__btn {
     position: absolute;
     height: 2px;
     width: 33px;
     background: #1B1A1A;
+
 }
 .burger__btn:after {
     content: '';
@@ -122,6 +142,33 @@ html {
     width: 33px;
     background: #1B1A1A;
     top: 7px;
+
+}
+@keyframes show-burger-menu {
+    0% {
+        transform: translate(50%, -70%) scale(0);
+    }
+    100% {
+        transform: translate(0,0) scale(1);
+
+    }
+}
+@keyframes hide-burger-menu {
+    0% {
+        opacity: 1;
+        transform: translate(0,0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0,-50%) scale(0);
+    }
+}
+.burger__menu-enter-active {
+    animation: show-burger-menu .5s forwards;
+}
+
+.burger__menu-exit-active {
+    animation: hide-burger-menu .5s forwards;
 
 }
 @media (max-width: 840px) {
@@ -136,5 +183,8 @@ html {
     }
     .nav__burger {
         display: flex;
+    }
+    .burger__menu {
+        visibility: visible;
     }
 }

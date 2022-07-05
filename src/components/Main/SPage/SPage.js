@@ -6,7 +6,7 @@ const SPage = () => {
     const variantsTitle = {
         hidden: {
             opacity: 0,
-            x: '-100%',
+            x: '-50%',
         },
         visible: custom => ({
             opacity: 1,

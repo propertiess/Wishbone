@@ -1,0 +1,46 @@
+.unActive {
+
+
+}
+.main {
+}
+@keyframes blur-content {
+    0%{
+
+        filter: none;
+
+    }
+    100% {
+
+        filter: blur(3px);
+    }
+}
+.main-enter-active {
+    animation: blur-content 500ms forwards;
+}
+.main-enter-done {
+    z-index: -2;
+    filter: blur(3px);
+}
+.main-exit-active {
+
+    animation: blur-content 500ms reverse;
+
+}
+@media (min-width: 840px) {
+    .main-enter-active {
+        animation: none;
+    }
+    .main-exit-active {
+
+        animation: none;
+
+    }
+    .main-enter-done {
+        filter: blur(0);
+    }
+    .main-exit-done {
+        filter: blur(0);
+
+    }
+}
